@@ -1,0 +1,25 @@
+<h1>PMSIpilot UI</h1>
+
+<p>PMSIpilot UI is a themable UI library based on Bootstrap. It's the the base UI library in all PMSIpilot/PSIH applications.</p>
+
+<h3 class="space-top">Using the library in your project</h3>
+
+Install with bower
+
+<pre>bower install pmsipilot-ui --save</pre>
+
+In your main.less, import the library less file
+
+<pre>
+@import 'bower_components/fontawesome/less/font-awesome';
+@import 'bower_components/bootstrap/less/bootstrap';
+@import 'bower_components/pmsipilot-ui/less/bootstrap';
+</pre>
+
+Customize your UI Theme
+
+<pre>
+body {
+.theme-colored(@themeColorOne, @themeColorTwo, @themeColorThree);
+}
+</pre>
