@@ -3,9 +3,11 @@ PMSIpilot UI
 
 PMSIpilot UI is a themable UI library based on Bootstrap. It's the the base UI library in all PMSIpilot/PSIH applications.
 
+[Live Demo](http://pmsipilot.github.io/ui/#/)
+
 
 Using the library in your project
----------------------------------------------
+---------------------------------
 
 Install with bower
 
