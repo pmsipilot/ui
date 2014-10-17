@@ -1,1 +1,4 @@
 bower_components
+demo/bower_components
+demo/public
+demo/node_modules
