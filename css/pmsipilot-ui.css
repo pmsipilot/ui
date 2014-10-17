@@ -9064,13 +9064,13 @@ label {
   height: 40px;
   margin-right: 10px;
 }
-.logo-pmsipilot .small {
+.logo-pmsipilot.small {
   background: url(../images/logo-pmsipilot-small.png);
 }
-.logo-pmsipilot .medium {
+.logo-pmsipilot.medium {
   background: url(../images/logo-pmsipilot.png);
 }
-.logo-pmsipilot .large {
+.logo-pmsipilot.large {
   background: url(../images/logo-pmsipilot-large.png);
 }
 .logo-pmsipilot.small {
