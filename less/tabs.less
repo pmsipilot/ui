@@ -1,0 +1,42 @@
+.vertical-tabs {
+    display: block;
+    position: relative;
+    top: 0;
+    padding: 0;
+    list-style: none;
+
+    &.right {
+        float: right;
+        text-align: right;
+    }
+
+    li {
+
+        a, span.item {
+            display: block;
+            position: relative;
+            margin: auto;
+            padding: 10px 20px;
+        }
+
+        a:hover, a.active {
+            z-index: 10;
+            background: white;
+            position: relative;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 20px;
+        }
+        ul.extra {
+            margin-left: 0;
+
+            li a {
+                display: inline-block;
+                padding: 10px;
+            }
+        }
+    }
+}

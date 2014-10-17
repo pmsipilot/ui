@@ -1,0 +1,33 @@
+.modal-backdrop,
+.modal-backdrop.fade.in {
+    .opacity(80);
+}
+
+.modal-show {
+    display: block;
+}
+
+.modal-colored(@color, @text-color-header) {
+    .modal-header {
+        color: @text-color-header;
+        background-color: @color;
+        .close {
+            color: #FFF;
+            .opacity(50);
+            &:hover, &:active, &:focus {
+                color: #F7F7F7;
+                .opacity(80);
+            }
+        }
+    }
+}
+
+.modal-header {
+    h1, h2, h3 {
+        margin: 0;
+    }
+}
+
+.modal-footer {
+    margin: 0;
+}

@@ -1,0 +1,38 @@
+.pagination ul {
+    .btn-group;
+
+    li {
+        display: inline-block;
+
+        a {
+            .btn;
+
+            &:hover {
+            }
+        }
+
+        &.disabled a {
+            cursor: text;
+            .btn.active
+        ;
+        }
+    }
+}
+
+.pagination  ul > li a {
+    position: relative;
+    .border-radius(0);
+}
+
+.pagination  ul > li a + li a {
+    margin-left: -1px;
+}
+
+.pagination  ul > li:first-child a {
+    margin-left: 0;
+    .border-radius(@buttonsRadius 0 0 @buttonsRadius);
+}
+
+.pagination ul > li:last-child a {
+    .border-radius(0 @buttonsRadius @buttonsRadius 0);
+}

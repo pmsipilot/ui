@@ -1,0 +1,89 @@
+.select2(@colorOne, @colorTwo, @formColor, @formBorderColor, @formBackgroundColor) {
+
+    .select2-container {
+        width: 210px;
+
+        .select2-choice {
+            .border-radius(@formRadius);
+            border: 1px solid @formBorderColor;
+
+            background: @formBackgroundColor;
+            background-image: none;
+            color: @formColor;
+
+            .select2-arrow {
+                background: @select2ArrowBackgroudColor;
+                border-left: none;
+                .border-radius(0 @formRadius @formRadius 0);
+            }
+        }
+    }
+
+    .select2-drop {
+        .border-radius(0 0 @formRadius @formRadius);
+        border-color: @formBorderColor;
+        background: @formBackgroundColor;
+        .box-sizing(border-box);
+        box-shadow: none;
+        margin-top: -2px;
+        padding-top: 4px;
+    }
+
+    .select2-drop-active {
+        border-color: @colorOne;
+    }
+
+    .select2-search input[type="text"] {
+        background: @formBackgroundColor url('select2.png') no-repeat 100% -22px;
+        width: 100%;
+        border-color: @formBorderColor;
+    }
+
+    .select2-no-results {
+        line-height: 20px;
+    }
+
+    .select2-container-multi {
+        .select2-choices  {
+            border-color: @formBorderColor;
+            .border-radius(@formRadius);
+            color: @formBorderColor;
+            background: @formBackgroundColor;
+
+            .select2-search-choice {
+                .box-shadow(none);
+                background: @colorTwo;
+                border: none;
+                color: white;
+                line-height: 16px;
+            }
+
+            .select2-search-field input {
+                height: auto;
+            }
+        }
+
+        &.select2-dropdown-open,
+        &.select2-container-active {
+            .select2-choices  {
+                border-color: @colorOne;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .select2-results {
+        .select2-highlighted {
+            background: @colorTwo;
+            color: white;
+        }
+    }
+
+    .select2-container-active {
+        .select2-choice,
+        .select2-choices {
+            border-color: @colorOne;
+            box-shadow: none;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.loading-indicator-backdrop {
+    .opacity(20);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: @zIndexLoadingBackdrop;
+    background-color: black;
+}
+
+.loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -2em;
+    margin-left: -2em;
+    z-index: @zIndexLoadingBackdrop+10;
+
+    .fa-spin {
+        font-size: 8em;
+    }
+}
+
+.wait-translation {
+    visibility:hidden;
+    &.translation-loaded {
+        visibility: visible;
+    }
+}
+
+.pm-loading-container {
+    position: relative;
+    .loading-indicator {
+        .icon-spin {
+            font-size: 4em;
+        }
+    }
+}

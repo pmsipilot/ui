@@ -1,0 +1,19 @@
+{
+  "name": "pmsipilot-ui",
+  "version": "1.0.0",
+  "description": "PMSIpilot UI Library",
+  "keywords": [
+    "ui",
+    "bootstrap",
+    "theme"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.2.0",
+    "bootstrap": "~3.2.0"
+  }
+}

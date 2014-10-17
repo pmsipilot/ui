@@ -1,0 +1,80 @@
+.theme-colored(@color1, @color2, @color3) {
+
+    // Links
+    a {
+        color: @color1;
+
+        &:hover,
+        &:focus {
+            color: @color1;
+        }
+    }
+
+    // Buttons
+    .btn-one, a.btn-one {
+        .buttonColored(@color1, @color1 - #151515, white);
+    }
+
+    .btn-two, a.btn-two {
+        .buttonColored(@color2, @color2 - #151515, white);
+    }
+
+    .btn-three, a.btn-three {
+        .buttonColored(@color3, @color3 - #151515, white);
+    }
+
+    // forms
+    textarea:focus, .textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, select:focus {
+        border: 1px solid @color1;
+    }
+
+    // sections
+    .application-header {
+        background-color: @color1;
+        textarea, .textarea, input[type="text"], input[type="password"], input[type="email"], input[type="number"], select {
+            border: 1px solid @color1;
+        }
+    }
+
+    // tables
+    .table-one {
+        .table-colored(@color1, #fff);
+    }
+
+    .table-two {
+        .table-colored(@color2, #fff);
+    }
+
+    .table-three {
+        .table-colored(@color3, #fff);
+    }
+
+    // Grids
+    .ngGrid.table-one {
+        .ngGridColored(@color1);
+    }
+
+    .ngGrid.table-two {
+        .ngGridColored(@color2);
+    }
+
+    .ngGrid.table-three {
+        .ngGridColored(@color3);
+    }
+
+    // Modals
+    .modal-one {
+        .modal-colored(@color1, #fff);
+    }
+
+    .modal-two {
+        .modal-colored(@color2, #fff);
+    }
+
+    .modal-three {
+        .modal-colored(@color3, #fff);
+    }
+
+    // Select2
+    .select2(@color1, @color2, @formColor, @formBorderColor, @formBackgroundColor);
+}

@@ -1,0 +1,99 @@
+.buttonColored(@backgroundColor, @borderColor, @textColor) {
+    border-bottom: 2px solid @borderColor;
+    background-color: @backgroundColor;
+    color: @textColor;
+
+    &:hover, &.active, &:focus {
+        background-color: @backgroundColor + #0a0a0a;
+        text-decoration: none;
+        color: @textColor;
+        .box-shadow(none);
+    }
+
+    &:active, &:hover:active, &:focus:active, &.active:active {
+        background-color: @backgroundColor;
+        .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+    }
+
+    &.selected {
+        background-color: @backgroundColor + #303030;
+        border-bottom-color: @borderColor + #303030;
+    }
+}
+
+.buttonSize(@size) {
+    &.rounded {
+        .border-radius((@size + 10px) / 2);
+        width: @size + 10px;
+        height: @size + 10px;
+        padding: 0;
+        border: 0;
+    }
+    &.square {
+        width: @size + 10px;
+        height: @size + 10px;
+        padding: 0;
+    }
+    padding: 0 @size;
+    height: @size + 10px;
+    line-height: @size + 10px;
+    text-align: center;
+}
+
+.btn, a.btn {
+    display: inline-block;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    .border-radius(@buttonsRadius);
+    .transition(all .05s ease-out);
+
+    .buttonColored(#e9e9e9, #ccc, @baseTextColor);
+    .btn-normal;
+
+    &.disabled, &[disabled] {
+        cursor: default;
+        background-image: none;
+        .opacity(65);
+        .box-shadow(none);
+    }
+}
+
+.btn-normal, a.btn-normal {
+    .buttonSize(@line-height-base);
+}
+
+.btn-medium, a.btn-large {
+    .buttonSize(@line-height-base * 1.5);
+}
+
+.btn-large, a.btn-medium {
+    .buttonSize(@line-height-base * 2);
+}
+
+.btn-small, a.btn-small {
+    .buttonSize(@line-height-base * 0.7);
+}
+
+.btn-icon, a.btn-icon {
+    .icon {
+        margin-right: 10px;
+    }
+
+    .icon-separated {
+        display: inline-block;
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid #FFF;
+    }
+}
+
+.btn.btn-empty {
+    padding: 0;
+    margin: 0;
+
+    .btn-content {
+        padding: 0 @line-height-base;
+    }
+}
