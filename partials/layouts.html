@@ -1,0 +1,30 @@
+
+<h2>Layouts</h2>
+
+<p>By default, PMSIpilot UI uses a classic application layout with a header and a sidebar (optional). It's the layout used in this demo UI.</p>
+<pre data-pm-prettify="'partials/code/layout/default.html'" class="lang-html"></pre>
+
+
+<h2 class="space-top">Flexible Grids</h2>
+
+<p>PMSIpilot UI allows you to create custom layouts using the following utility classes</p>
+<p>Define a row like this</p>
+<pre data-pm-prettify="'partials/code/layout/row.html'" class="lang-html"></pre>
+<p>and a column like this</p>
+<pre data-pm-prettify="'partials/code/layout/column.html'" class="lang-html"></pre>
+<p>We can make any layout we want by combining rows and columns.</p>
+<div class="layout-exemple space-top">
+    <div class="desktop-row" style="height: 200px;">
+        <div class="desktop-col layout-block" style="width: 200px;"></div>
+        <div class="desktop-col layout-block" style="left: 220px; right: 0;"></div>
+    </div>
+    <div class="desktop-row" style="height: 300px; top: 220px">
+        <div class="desktop-col layout-block" style="width: 400px;"></div>
+        <div class="desktop-col" style="left: 420px; right: 0;">
+            <div class="desktop-row layout-block" style="height: 150px;">
+            </div>
+            <div class="desktop-row layout-block" style="top: 170px; bottom: 0px">
+            </div>
+        </div>
+    </div>
+</div>
