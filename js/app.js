@@ -1,9 +1,9 @@
-var angularModule = angular.module('pmsipilot-ui-demo',[
+angular.module('pmsipilot-ui-demo',[
     'ui.bootstrap',
     'ngRoute'
 ]);
 
-angularModule.config(['$routeProvider', function($routeProvider) {
+angular.module('pmsipilot-ui-demo').config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
 
@@ -46,7 +46,7 @@ angularModule.config(['$routeProvider', function($routeProvider) {
 
 }]);
 
-angularModule.controller('MenuController', ['$scope', '$location', function($scope, $location) {
+angular.module('pmsipilot-ui-demo').controller('MenuController', ['$scope', '$location', function($scope, $location) {
 
     $scope.isCurrent = function (tab) {
         return $location.path().indexOf('/' + tab) === 0;
@@ -54,7 +54,7 @@ angularModule.controller('MenuController', ['$scope', '$location', function($sco
 
 }]);
 
-angularModule.controller('PopupsController', ['$scope', '$modal', function($scope, $modal) {
+angular.module('pmsipilot-ui-demo').controller('PopupsController', ['$scope', '$modal', function($scope, $modal) {
 
     $scope.openModal = function(theme) {
         $scope.theme = theme;
@@ -63,7 +63,10 @@ angularModule.controller('PopupsController', ['$scope', '$modal', function($scop
             templateUrl: 'partials/utils/modal.html',
             windowClass: 'modal-' + theme,
             backdrop: 'static',
-            scope: $scope
+            scope: $scope,
+            controller: ['$scope', '$modalInstance', function($scope, $modalInstance) {
+                $scope.close = $modalInstance.close;
+            }]
         });
     };
 }]);
