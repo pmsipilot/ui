@@ -1,9 +1,9 @@
-var angularModule = angular.module('pmsipilot-ui-demo',[
+angular.module('pmsipilot-ui-demo',[
     'ui.bootstrap',
     'ngRoute'
 ]);
 
-angularModule.config(['$routeProvider', function($routeProvider) {
+angular.module('pmsipilot-ui-demo').config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
 
