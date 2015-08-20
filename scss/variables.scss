@@ -1,0 +1,120 @@
+// =============================================
+// Twitter Bootstrap variables
+// =============================================
+$font-size-base: 0.8rem !default;
+$font-family-sans-serif: 'Source Sans Pro', sans-serif !default;
+
+$line-height-computed: 20px !default;
+$input-default-height: 30px !default;
+
+$headings-font-weight: 300 !default;
+
+$border-radius:        2px !default;
+$border-radius-lg:       2px !default;
+$border-radius-sm:       2px !default;
+
+// =============================================
+// Twitter boostrap Colors
+// =============================================
+$state-warning-text: #af7f18 !default;
+$state-warning-bg: #fffaf0 !default;
+$state-warning-border: #fcf8e3 !default;
+
+$state-danger-text: #b13d31 !default;
+$state-danger-bg: #fdefee !default;
+$state-danger-border: #fad7db !default;
+
+$state-success-text: #229173 !default;
+$state-success-bg: #f2fcf9 !default;
+$state-success-border: #ddf7eb !default;
+
+$state-info-text: #26929c !default;
+$state-info-bg: #eef8fc !default;
+$state-info-border: #d0f2f7 !default;
+
+$grid-gutter-width:         0 !default;
+
+// =============================================
+// TOOLTIPS
+// =============================================
+$font-size-mini: ceil($font-size-base * 0.85) !default;
+// ~11px
+
+$tooltip-color: #fff !default;
+$tooltip-bg: rgba(0, 0, 0, 0.9) !default;
+$tooltip-arrow-width: 5px !default;
+$tooltip-arrow-color: $tooltip-bg !default;
+
+$zindex-tooltip: 1030 !default;
+
+
+// =============================================
+// BASE FONT SIZE AND FAMILY
+// =============================================
+$base-text-color: #666 !default;
+$base-font-weight: 400 !default;
+$bold-font-weight: 600 !default;
+$line-height-base: 20px !default;
+
+// =============================================
+// SECTIONS
+// =============================================
+$application-header-height: 40px !default;
+$application-header-padding: 15px !default;
+$application-header-font-size: 1.2em !default;
+$sidebar-width: 340px !default;
+$sidebar-nav-item-width: 40px !default;
+$sidebar-resizer-width: 6px !default;
+$sidebar-resizer-color: #e1e1e1 !default;
+$sidebar-resizer-active-color: #ccc !default;
+
+// =============================================
+// BUTTONS
+// =============================================
+$buttons-radius: 2px !default;
+
+// =============================================
+// FORMS
+// =============================================
+$form-radius: 2px !default;
+$form-label-width: 180px !default;
+$form-background-color: #f7f7f7 !default;
+$form-border-color: #cbd5dd !default;
+$form-color: #41484a !default;
+$form-box-shadow-rgba: rgba(39, 65, 90, 0.075) !default;
+
+// =============================================
+// TABLES
+// =============================================
+$table-background: transparent !default; // overall background-color
+$table-background-accent: #f9f9f9 !default; // for striping
+$table-background-hover: #f5f5f5 !default; // for hover
+$table-border: #ddd !default; // table and cell border
+
+// =============================================
+// FLASH MESSAGES
+// =============================================
+$flash-messages-radius: 2px !default;
+
+// =============================================
+// LOADER INDICATOR
+// =============================================
+$zindex-loading-backdrop: 2000 !default;
+
+// =============================================
+// SCROLL BARS
+// =============================================
+$scrollbar-width-height: 6px !default;
+$scrollbar-background: #f5f5f5 !default;
+$scrollbar-foreground: #aaa !default;
+
+// =============================================
+// SELECT2
+// =============================================
+$select2-arrow-backgroud: #dddddd !default;
+
+// =============================================
+// Font awesome
+// =============================================
+$fa-font-path:        "../font" !default;
+$icon-font-path:      "../font/" !default;

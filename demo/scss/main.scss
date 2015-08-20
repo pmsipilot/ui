@@ -1,0 +1,38 @@
+@import "../node_modules/pmsipilot-ui/scss/bootstrap";
+
+$themeColorOne: #0091E5;
+$themeColorTwo: #8DCF3F;
+$themeColorThree: rgb(39, 65, 90);
+
+body {
+    @include theme-colored($themeColorOne, $themeColorTwo, $themeColorThree);
+}
+
+@mixin layout-exemple {
+  padding: 0 100px;
+  position: relative;
+  height: 550px;
+}
+
+.layout-exemple {
+  @include layout-exemple;
+}
+
+.layout-exemple-small {
+  @include layout-exemple;
+  height: 220px;
+}
+
+.layout-exemple .desktop-row, .layout-exemple .desktop-col {
+  padding: 0;
+}
+
+.layout-block {
+  background: #eee;
+}
+
+// Pretify
+li.L0, li.L1, li.L2, li.L3,
+li.L5, li.L6, li.L7, li.L8
+{ list-style-type: decimal !important }
+

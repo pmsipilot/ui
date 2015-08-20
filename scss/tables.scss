@@ -1,0 +1,188 @@
+@mixin table {
+  td.actions,
+  th.actions {
+    i {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    a:hover {
+      text-decoration: none;
+
+      i {
+        color: #000;
+      }
+    }
+  }
+  > thead > tr > th {
+    border-bottom-width: 1px;
+  }
+  // Nesting
+  .table {
+    background-color: #FFF;
+  }
+
+  td.selected-50,
+  th.selected-50 {
+    background-color: lighten(#333, 60%);
+  }
+
+  td.selected-60,
+  th.selected-60 {
+    background-color: lighten(#333, 65%);
+  }
+
+  td.selected-70,
+  th.selected-70 {
+    background-color: lighten(#333, 70%);
+  }
+
+  td.selected-80,
+  th.selected-80 {
+    background-color: lighten(#333, 72%);
+  }
+
+  td.selected-90,
+  th.selected-90 {
+    background-color: lighten(#333, 75%);
+  }
+
+  .cell-header {
+    background-color: #F1F1F1;
+  }
+}
+
+@mixin table-colored($color, $text-color-header) {
+  thead th {
+    background-color: $color;
+    color: $text-color-header;
+    border: 0
+  }
+
+  td.colored-5,
+  th.colored-5 {
+    background-color: lighten($color, 5%);
+  }
+
+  td.colored-10,
+  th.colored-10 {
+    background-color: lighten($color, 10%);
+  }
+
+  td.colored-20,
+  th.colored-20 {
+    background-color: lighten($color, 20%);
+  }
+
+  td.colored-30,
+  th.colored-30 {
+    background-color: lighten($color, 30%);
+  }
+
+  td.colored-40,
+  th.colored-40 {
+    background-color: lighten($color, 40%);
+  }
+
+  td.colored-50,
+  th.colored-50 {
+    background-color: lighten($color, 60%);
+  }
+
+  td.colored-60,
+  th.colored-60 {
+    background-color: lighten($color, 65%);
+  }
+
+  td.colored-70,
+  th.colored-70 {
+    background-color: lighten($color, 70%);
+  }
+
+  td.colored-80,
+  th.colored-80 {
+    background-color: lighten($color, 72%);
+  }
+
+  td.colored-90,
+  th.colored-90 {
+    background-color: lighten($color, 75%);
+  }
+}
+
+.table {
+  @include table;
+}
+
+/* ----------------------- NgGrid ---------------- */
+@mixin ng-grid-colored($color) {
+  .ngTopPanel {
+    background: $color;
+    .ngHeaderContainer {
+      color: #fff;
+    }
+  }
+  .ngFooterPanel {
+    background: $color;
+    color: #fff;
+    .ngTotalSelectContainer {
+      color: $color;
+    }
+  }
+}
+
+.ngGrid {
+  max-width: 100%;
+  background-color: $table-background;
+  height: 300px;
+  line-height: 26px;
+
+  .ngPinnedIcon,
+  .ngUnPinnedIcon {
+    top: 14px;
+  }
+
+  .ngVerticalBarVisible {
+    background: none;
+  }
+
+  .ngTopPanel {
+    background: none;
+  }
+
+  .ngRow {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .ngRow.odd {
+    background: none;
+  }
+
+  .ngRow.even {
+    background: none;
+  }
+
+  .ngRow.selected {
+    background: #c9dde1;
+  }
+
+  &.bordered {
+    border: 1px solid $table-border;
+
+    .ngVerticalBarVisible {
+      background: $table-border;
+    }
+  }
+
+  &.striped {
+    .ngRow.odd {
+      background-color: #fdfdfd;
+    }
+    .ngRow.even {
+      background-color: #f3f3f3;
+    }
+    .ngRow.selected {
+      background: #c9dde1;
+    }
+  }
+}

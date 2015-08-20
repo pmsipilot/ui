@@ -1,26 +1,26 @@
 @import "variables";
-@import "utils";
-@import "commons";
+@import "../node_modules/font-awesome/scss/font-awesome";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 @import "grid";
-@import "titles";
 @import "sections";
-@import "tabs";
+@import "commons";
+@import "titles";
 @import "buttons";
+@import "tabs";
 @import "forms";
 @import "tables";
 @import "flash-messages";
 @import "pagination";
 @import "modals";
 @import "animations";
-@import "theme";
-@import "responsive";
-@import "tooltip";
 @import "font";
 @import "scrollbar";
 @import "logo";
 @import "loading";
 @import "navs";
-@import "ie";
 @import "select2";
 @import "breadcrumb";
 @import "dropdown";
+
+@import "theme";

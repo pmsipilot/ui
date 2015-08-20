@@ -5,7 +5,7 @@ angular.module('pmsipilot-ui-demo').directive('pmPrettify', ['$http', function($
             },
             link: function(scope, element) {
                 $http.get(scope.template, { cache: true }).success(function(template) {
-                    element.html(prettyPrintOne($('<div></div>').text(template).html(), undefined, true));
+                    element.html(prettyPrintOne(angular.element('<div></div>').text(template).html(), undefined, true));
                 });
             }
         };
