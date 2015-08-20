@@ -1,0 +1,88 @@
+@mixin select2($color-one, $color-two, $form-color, $form-border-color, $form-background-color) {
+
+  .select2-container {
+    width: 210px;
+
+    .select2-choice {
+      @include border-radius($form-radius);
+      border: 1px solid $form-border-color;
+
+      background: $form-background-color;
+      background-image: none;
+      color: $form-color;
+
+      .select2-arrow {
+        background: $select2-arrow-backgroud;
+        border-left: none;
+        @include border-radius(0 $form-radius $form-radius 0);
+      }
+    }
+  }
+
+  .select2-drop {
+    @include border-radius(0 0 $form-radius $form-radius);
+    border-color: $form-border-color;
+    background: $form-background-color;
+    box-shadow: none;
+    margin-top: -2px;
+    padding-top: 4px;
+  }
+
+  .select2-drop-active {
+    border-color: $color-one;
+  }
+
+  .select2-search input[type="text"] {
+    background: $form-background-color url('select2.png') no-repeat 100% -22px;
+    width: 100%;
+    border-color: $form-border-color;
+  }
+
+  .select2-no-results {
+    line-height: 20px;
+  }
+
+  .select2-container-multi {
+    .select2-choices  {
+      border-color: $form-border-color;
+      @include border-radius($form-radius);
+      color: $form-border-color;
+      background: $form-background-color;
+
+      .select2-search-choice {
+        @include box-shadow(none);
+        background: $color-two;
+        border: none;
+        color: white;
+        line-height: 16px;
+      }
+
+      .select2-search-field input {
+        height: auto;
+      }
+    }
+
+    &.select2-dropdown-open,
+    &.select2-container-active {
+      .select2-choices  {
+        border-color: $color-one;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .select2-results {
+    .select2-highlighted {
+      background: $color-two;
+      color: white;
+    }
+  }
+
+  .select2-container-active {
+    .select2-choice,
+    .select2-choices {
+      border-color: $color-one;
+      box-shadow: none;
+    }
+  }
+}

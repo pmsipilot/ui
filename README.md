@@ -9,24 +9,27 @@ PMSIpilot UI is a themable UI library based on Bootstrap. It's the the base UI l
 Using the library in your project
 ---------------------------------
 
-Install with bower
+Install with npm
 
 ```javascript
-bower install pmsipilot-ui --save
+npm install pmsipilot-ui --save
 ```
 
-In your main.less, import the library less file
+In your main.scss, import the library sass file
 
-```less
-@import 'bower_components/fontawesome/less/font-awesome';
-@import 'bower_components/bootstrap/less/bootstrap';
-@import 'bower_components/pmsipilot-ui/less/bootstrap';
+```sass
+@import 'node_modules/pmsipilot-ui/scss/bootstrap';
 ```
 
 Customize your UI Theme
 
-```less
+```sass
 body {
-    .theme-colored(@themeColorOne, @themeColorTwo, @themeColorThree);
+    @include theme-colored(@themeColorOne, @themeColorTwo, @themeColorThree);
 }
 ```
+
+Build
+ * The output css should be in the css public folder
+ * Copy images from the library to the images public folder
+ * Copy fonts from the library, bootstrap and from font-awesome the publid font folder

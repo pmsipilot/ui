@@ -1,13 +1,13 @@
 {
   "name": "pmsipilot-ui",
-  "version": "3.1.2",
+  "version": "4.0.0",
   "description": "PMSIpilot UI Library",
   "repository": {
-	  "type": "git",
-	  "url": "https://github.com/pmsipilot/ui"
+    "type": "git",
+    "url": "https://github.com/pmsipilot/ui"
   },
   "dependencies": {
-    "font-awesome": "~4.2.0",
-    "bootstrap": "~3.2.0"
+    "bootstrap": "git+https://github.com/twbs/bootstrap.git#v4-dev",
+    "font-awesome": "~4.2.0"
   }
 }

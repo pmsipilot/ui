@@ -1,0 +1,163 @@
+.application-header {
+  @include desktop-row;
+  font-size: $application-header-font-size;
+  background-color: #333;
+  padding: $application-header-padding;
+  color: #fff;
+  height: $application-header-height + 2 * $application-header-padding;
+  line-height: $application-header-height;
+
+  .application-title {
+    font-size: 2em;
+    float: left;
+    line-height: $application-header-height;
+    display: block;
+    color: #fff;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .breadcrumb {
+    float: left;
+    margin-left: 100px;
+    color: #ddd;
+    li {
+      padding: 0 3px;
+      &.active {
+        color: #fff;
+      }
+
+      a {
+        color: #ddd;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  textarea,
+  .textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    border: 2px solid #333;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    option {
+      color: $base-text-color;
+    }
+  }
+}
+
+.main {
+  @include desktop-row;
+  @include scroll-y;
+  top: $application-header-height + (2 * $application-header-padding);
+  bottom: 0;
+}
+
+.sidebar {
+  @include desktop-col;
+  @include scroll-y;
+  left: 0;
+  width: $sidebar-width;
+  background: #f1f1f1;
+
+  .block {
+    padding: 20px;
+    background: #fff;
+  }
+
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    box-shadow: none;
+    background: #fff;
+  }
+}
+
+.content {
+  @include desktop-col;
+  @include scroll-y;
+  @include scroll-x;
+  right: 0;
+  left: $sidebar-width + $sidebar-resizer-width;
+}
+
+.subheader {
+  padding: 0 10px;
+  @include desktop-row;
+  top: 0;
+  height: 50px;
+  background: #f1f1f1;
+  line-height: 50px;
+
+  .breadcrumb li {
+    line-height: 40px;
+  }
+
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #f1f1f1;
+  }
+}
+
+.subheader-rest {
+  @include desktop-row;
+  @include scroll-y;
+  top: 50px;
+  bottom: 0;
+}
+
+.sidebar-resizer {
+  position: absolute;
+  left: $sidebar-width;
+  top: 0;
+  bottom: 0;
+  width: $sidebar-resizer-width;
+  cursor: pointer;
+  background-color: $sidebar-resizer-color;
+
+  &:hover {
+    background-color: $sidebar-resizer-active-color
+  }
+
+  &::before {
+    content: $fa-var-angle-left;
+    position: absolute;
+    top: 50%;
+    font-family: FontAwesome;
+  }
+}
+
+.sidebar-closed {
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar-resizer {
+    left: 0;
+    width: $sidebar-resizer-width;
+  }
+
+  .content {
+    left: $sidebar-resizer-width;
+  }
+
+  .sidebar-resizer::before {
+    content: $fa-var-angle-right;
+  }
+}

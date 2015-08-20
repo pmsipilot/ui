@@ -1,0 +1,33 @@
+.pagination ul {
+  li {
+    display: inline-block;
+
+    a {
+      @include button;
+      &:hover {}
+    }
+
+    &.disabled a {
+      cursor: text;
+      @include tab-focus;
+    }
+  }
+}
+
+.pagination  ul > li a {
+  position: relative;
+  @include border-radius(0);
+}
+
+.pagination  ul > li a + li a {
+  margin-left: -1px;
+}
+
+.pagination  ul > li:first-child a {
+  margin-left: 0;
+  @include border-radius($buttons-radius 0 0 $buttons-radius);
+}
+
+.pagination ul > li:last-child a {
+  @include border-radius(0 $buttons-radius $buttons-radius 0);
+}
