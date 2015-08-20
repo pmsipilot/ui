@@ -6,22 +6,22 @@
   z-index: 5000;
 }
 
-@mixin flashMessageColored($backgroundColor, $borderColor, $textColor) {
-  border: 1px solid $borderColor;
-  background-color: $backgroundColor;
+@mixin flash-message-colored($background-color, $border-color, $text-color) {
+  border: 1px solid $border-color;
+  background-color: $background-color;
   background-repeat: no-repeat;
   background-position: 10px center;
-  color: $textColor;
+  color: $text-color;
   opacity: 0.85;
 
   &:hover, &.active {
-    background-color: $backgroundColor + #0a0a0a;
+    background-color: $background-color + #0a0a0a;
     text-decoration: none;
     opacity: 1;
   }
 
   i {
-    color: $textColor;
+    color: $text-color;
   }
 
   a {
@@ -33,17 +33,14 @@
   border: 0;
   @include border-radius($flash-messages-radius);
   @include box-shadow(0 6px 12px rgba(0,0,0,.175));
+  @include transition(all .05s ease-out);
   cursor: pointer;
-  -webkit-transition: all .05s ease-out;
-  -moz-transition: all .05s ease-out;
-  -o-transition: all .05s ease-out;
-  transition: all .05s ease-out;
   text-decoration: none;
   padding: 10px;
   margin-bottom: 10px;
   text-align: justify;
 
-  @include flashMessageColored(#e9e9e9, #ccc, $base-text-color);
+  @include flash-message-colored(#e9e9e9, #ccc, $base-text-color);
 
   i {
     margin-right: 5px;
@@ -51,18 +48,18 @@
 }
 
 .flash-message.success {
-  @include flashMessageColored($state-success-bg, $state-success-border, $state-success-text);
+  @include flash-message-colored($state-success-bg, $state-success-border, $state-success-text);
 }
 
 .flash-message.error {
-  @include flashMessageColored($state-danger-bg, $state-danger-border, $state-danger-text);
+  @include flash-message-colored($state-danger-bg, $state-danger-border, $state-danger-text);
 }
 
 .flash-message.info {
-  @include flashMessageColored($state-info-bg, $state-info-border, $state-info-text);
+  @include flash-message-colored($state-info-bg, $state-info-border, $state-info-text);
 }
 
 .flash-message.warning {
-  @include flashMessageColored($state-warning-bg, $state-warning-border, $state-warning-text);
+  @include flash-message-colored($state-warning-bg, $state-warning-border, $state-warning-text);
 }
 

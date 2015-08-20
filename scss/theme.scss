@@ -11,30 +11,46 @@
   }
 
   // Buttons
-  .btn-default, a.btn-default {
-    @include buttonColored(#e9e9e9, #ccc, $base-text-color);
+  .btn-default,
+  a.btn-default {
+    @include button-colored(#e9e9e9, #ccc, $base-text-color);
   }
-  .btn-one, a.btn-one {
-    @include buttonColored($color1, $color1 - #151515, white);
-  }
-
-  .btn-two, a.btn-two {
-    @include buttonColored($color2, $color2 - #151515, white);
+  .btn-one,
+  a.btn-one {
+    @include button-colored($color1, $color1 - #151515, white);
   }
 
-  .btn-three, a.btn-three {
-    @include buttonColored($color3, $color3 - #151515, white);
+  .btn-two,
+  a.btn-two {
+    @include button-colored($color2, $color2 - #151515, white);
+  }
+
+  .btn-three,
+  a.btn-three {
+    @include button-colored($color3, $color3 - #151515, white);
   }
 
   // forms
-  textarea:focus, .textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, select:focus {
+  textarea:focus,
+  .textarea:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  select:focus {
     border: 1px solid $color1;
   }
 
   // sections
   .application-header {
     background-color: $color1;
-    textarea, .textarea, input[type="text"], input[type="password"], input[type="email"], input[type="number"], select {
+    textarea,
+    .textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"],
+    select {
       border: 1px solid $color1;
     }
   }
@@ -54,15 +70,15 @@
 
   // Grids
   .ngGrid.table-one {
-    @include ngGridColored($color1);
+    @include ng-grid-colored($color1);
   }
 
   .ngGrid.table-two {
-    @include ngGridColored($color2);
+    @include ng-grid-colored($color2);
   }
 
   .ngGrid.table-three {
-    @include ngGridColored($color3);
+    @include ng-grid-colored($color3);
   }
 
   // Modals
@@ -79,5 +95,5 @@
   }
 
   // Select2
-  @include select2($color1, $color2, $formColor, $formBorderColor, $formBackgroundColor);
+  @include select2($color1, $color2, $form-color, $form-border-color, $form-background-color);
 }

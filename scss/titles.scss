@@ -1,9 +1,11 @@
-h2, h1, h3 {
+h2,
+h1,
+h3 {
   margin: 0;
   margin-bottom: 10px;
 
   .btn {
-    margin: 0 10px;
     font-size: inherit;
+    margin: 0 10px;
   }
 }

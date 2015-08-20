@@ -1,15 +1,15 @@
 @mixin tabbable-border {
   border: none;
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 1px solid #dddddd;
 }
 
 .tabbable {
   height: 100%;
   .nav-stacked {
     float:left;
-    width: $sidebarNavItemWidth;
+    width: $sidebar-nav-item-width;
     background-color: #F1F1F1;
-    border-right: 1px solid #DDDDDD;
+    border-right: 1px solid #dddddd;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -50,8 +50,8 @@
   .tab-content {
     overflow-y: auto;
     overflow-x: visible;
-    margin-left: $sidebarNavItemWidth + 1;
-    width: $sidebarWidth - $sidebarNavItemWidth - 1;
+    margin-left: $sidebar-nav-item-width + 1;
+    width: $sidebar-width - $sidebar-nav-item-width - 1;
     height: 100%;
     .tab-pane {
       padding: 10px;

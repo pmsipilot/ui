@@ -14,7 +14,13 @@
   padding-right: 10px;
 }
 
-textarea, .textarea, input[type="text"], input[type="password"], input[type="email"], input[type="number"], select {
+textarea,
+.textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select {
   border: 1px solid $form-border-color;
   color: $form-color;
   background: $form-background-color;
@@ -25,13 +31,32 @@ textarea, .textarea, input[type="text"], input[type="password"], input[type="ema
   @include box-shadow(none);
 }
 
-.sidebar textarea, .sidebar .textarea, .sidebar input[type="text"], .sidebar input[type="password"], .sidebar input[type="email"], .sidebar input[type="number"], .sidebar select,
-.block textarea, .block .textarea, .block input[type="text"], .block input[type="password"], .block input[type="email"], .block input[type="number"], .block select,
+.sidebar textarea,
+.sidebar .textarea,
+.sidebar input[type="text"],
+.sidebar input[type="password"],
+.sidebar input[type="email"],
+.sidebar input[type="number"],
+.sidebar select,
+.block textarea,
+.block .textarea,
+.block input[type="text"],
+.block input[type="password"],
+.block input[type="email"],
+.block input[type="number"],
+.block select,
 {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
-textarea:focus, .textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, select:focus, .form-control:focus {
+textarea:focus,
+.textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+.form-control:focus {
   border: 1px solid #666;
   outline: 0;
   @include box-shadow(none);

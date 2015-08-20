@@ -94,11 +94,13 @@ p {
   cursor: pointer;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   font-size: 1.1em;
 }
 
-.block, pre {
+.block,
+pre {
   display: block;
   padding: 20px;
   background: #f5f5f5;

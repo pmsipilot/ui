@@ -9,37 +9,41 @@
 
 @mixin modal-colored($color, $text-color-header) {
   .modal-header {
-    color: $text-color-header;
     background-color: $color;
+    color: $text-color-header;
   }
 
   .modal-footer .btn-modal {
-    @include buttonColored($color, darken($color, 10), $text-color-header);
+    @include button-colored($color, darken($color, 10), $text-color-header);
   }
 }
 
-.modal-success{
+.modal-success {
   @include modal-colored($btn-success-bg, $btn-success-color);
 }
 
-.modal-warning{
+.modal-warning {
   @include modal-colored($btn-warning-bg, $btn-warning-color);
 }
 
-.modal-danger{
+.modal-danger {
   @include modal-colored($btn-danger-bg, $btn-danger-color);
 }
 
 .modal-header {
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     margin: 0;
   }
 
   .close {
-    color: #FFF;
+    color: #fff;
     opacity: 0.5;
-    &:hover, &:active, &:focus {
-      color: #F7F7F7;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #f7f7f7;
       opacity: 0.8;
     }
   }

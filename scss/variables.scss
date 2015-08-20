@@ -17,7 +17,7 @@ $border-radius-sm:       2px !default;
 // Twitter boostrap Colors
 // =============================================
 $state-warning-text: #af7f18 !default;
-$state-warning-bg: floralwhite !default;
+$state-warning-bg: #fffaf0 !default;
 $state-warning-border: #fcf8e3 !default;
 
 $state-danger-text: #b13d31 !default;
@@ -41,7 +41,7 @@ $font-size-mini: ceil($font-size-base * 0.85) !default;
 // ~11px
 
 $tooltip-color: #fff !default;
-$tooltip-bg: rgba(0, 0, 0, .9) !default;
+$tooltip-bg: rgba(0, 0, 0, 0.9) !default;
 $tooltip-arrow-width: 5px !default;
 $tooltip-arrow-color: $tooltip-bg !default;
 
@@ -78,9 +78,9 @@ $buttons-radius: 2px !default;
 // =============================================
 $form-radius: 2px !default;
 $form-label-width: 180px !default;
-$form-background-color: #F7F7F7 !default;
+$form-background-color: #f7f7f7 !default;
 $form-border-color: #cbd5dd !default;
-$form-color: #41484A !default;
+$form-color: #41484a !default;
 $form-box-shadow-rgba: rgba(39, 65, 90, 0.075) !default;
 
 // =============================================
@@ -105,13 +105,13 @@ $zindex-loading-backdrop: 2000 !default;
 // SCROLL BARS
 // =============================================
 $scrollbar-width-height: 6px !default;
-$scrollbar-background: #F5F5F5 !default;
+$scrollbar-background: #f5f5f5 !default;
 $scrollbar-foreground: #aaa !default;
 
 // =============================================
 // SELECT2
 // =============================================
-$select2-arrow-backgroud: #DDDDDD !default;
+$select2-arrow-backgroud: #dddddd !default;
 
 // =============================================
 // Font awesome

@@ -1,41 +1,41 @@
-@mixin select2($colorOne, $colorTwo, $formColor, $formBorderColor, $formBackgroundColor) {
+@mixin select2($color-one, $color-two, $form-color, $form-border-color, $form-background-color) {
 
   .select2-container {
     width: 210px;
 
     .select2-choice {
-      @include border-radius($formRadius);
-      border: 1px solid $formBorderColor;
+      @include border-radius($form-radius);
+      border: 1px solid $form-border-color;
 
-      background: $formBackgroundColor;
+      background: $form-background-color;
       background-image: none;
-      color: $formColor;
+      color: $form-color;
 
       .select2-arrow {
         background: $select2-arrow-backgroud;
         border-left: none;
-        @include border-radius(0 $formRadius $formRadius 0);
+        @include border-radius(0 $form-radius $form-radius 0);
       }
     }
   }
 
   .select2-drop {
-    @include border-radius(0 0 $formRadius $formRadius);
-    border-color: $formBorderColor;
-    background: $formBackgroundColor;
+    @include border-radius(0 0 $form-radius $form-radius);
+    border-color: $form-border-color;
+    background: $form-background-color;
     box-shadow: none;
     margin-top: -2px;
     padding-top: 4px;
   }
 
   .select2-drop-active {
-    border-color: $colorOne;
+    border-color: $color-one;
   }
 
   .select2-search input[type="text"] {
-    background: $formBackgroundColor url('select2.png') no-repeat 100% -22px;
+    background: $form-background-color url('select2.png') no-repeat 100% -22px;
     width: 100%;
-    border-color: $formBorderColor;
+    border-color: $form-border-color;
   }
 
   .select2-no-results {
@@ -44,14 +44,14 @@
 
   .select2-container-multi {
     .select2-choices  {
-      border-color: $formBorderColor;
-      @include border-radius($formRadius);
-      color: $formBorderColor;
-      background: $formBackgroundColor;
+      border-color: $form-border-color;
+      @include border-radius($form-radius);
+      color: $form-border-color;
+      background: $form-background-color;
 
       .select2-search-choice {
         @include box-shadow(none);
-        background: $colorTwo;
+        background: $color-two;
         border: none;
         color: white;
         line-height: 16px;
@@ -65,7 +65,7 @@
     &.select2-dropdown-open,
     &.select2-container-active {
       .select2-choices  {
-        border-color: $colorOne;
+        border-color: $color-one;
         box-shadow: none;
       }
     }
@@ -73,7 +73,7 @@
 
   .select2-results {
     .select2-highlighted {
-      background: $colorTwo;
+      background: $color-two;
       color: white;
     }
   }
@@ -81,7 +81,7 @@
   .select2-container-active {
     .select2-choice,
     .select2-choices {
-      border-color: $colorOne;
+      border-color: $color-one;
       box-shadow: none;
     }
   }

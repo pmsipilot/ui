@@ -1,27 +1,27 @@
-@mixin buttonColored($backgroundColor, $borderColor, $textColor) {
-  border-bottom: 2px solid $borderColor;
-  background-color: $backgroundColor;
-  color: $textColor;
+@mixin button-colored($background-color, $border-color, $text-color) {
+  border-bottom: 2px solid $border-color;
+  background-color: $background-color;
+  color: $text-color;
 
   &:hover, &.active, &:focus {
-    background-color: $backgroundColor + #0a0a0a;
+    background-color: $background-color + #0a0a0a;
     text-decoration: none;
-    color: $textColor;
+    color: $text-color;
     @include box-shadow(none);
   }
 
   &:active, &:hover:active, &:focus:active, &.active:active {
-    background-color: $backgroundColor;
+    background-color: $background-color;
     @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
   }
 
   &.selected {
-    background-color: $backgroundColor + #303030;
-    border-bottom-color: $borderColor + #303030;
+    background-color: $background-color + #303030;
+    border-bottom-color: $border-color + #303030;
   }
 }
 
-@mixin buttonSize($size) {
+@mixin button-sized($size) {
   &.rounded {
     @include border-radius(($size + 10px) / 2);
     width: $size + 10px;
@@ -41,19 +41,19 @@
 }
 
 @mixin btn-normal {
-  @include buttonSize($line-height-base);
+  @include button-sized($line-height-base);
 }
 
 @mixin btn-medium {
-  @include buttonSize($line-height-base * 1.5);
+  @include button-sized($line-height-base * 1.5);
 }
 
 @mixin btn-large {
-  @include buttonSize($line-height-base * 2);
+  @include button-sized($line-height-base * 2);
 }
 
 @mixin btn-small {
-  @include buttonSize($line-height-base * 0.7);
+  @include button-sized($line-height-base * 0.7);
 }
 
 @mixin button {
@@ -67,7 +67,6 @@
   cursor: pointer;
   user-select: none;
   border: 0;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $line-height, $btn-border-radius);
   @include transition(all .2s ease-in-out);
 
   &,
@@ -112,7 +111,7 @@
     display: inline-block;
     padding-right: 10px;
     margin-right: 10px;
-    border-right: 1px solid #FFF;
+    border-right: 1px solid #fff;
   }
 }
 
@@ -155,17 +154,17 @@
 }
 
 .btn-success {
-  @include buttonColored($btn-success-bg, darken($btn-success-bg, 10), #FFF);
+  @include button-colored($btn-success-bg, darken($btn-success-bg, 10), #fff);
 }
 
 .btn-danger {
-  @include buttonColored($btn-danger-bg, darken($btn-danger-bg, 10), #FFF);
+  @include button-colored($btn-danger-bg, darken($btn-danger-bg, 10), #fff);
 }
 
 .btn-warning {
-  @include buttonColored($btn-warning-bg, darken($btn-warning-bg, 10), #FFF);
+  @include button-colored($btn-warning-bg, darken($btn-warning-bg, 10), #fff);
 }
 
 .btn-info {
-  @include buttonColored($btn-info-bg, darken($btn-info-bg, 10), #FFF);
+  @include button-colored($btn-info-bg, darken($btn-info-bg, 10), #fff);
 }

@@ -38,7 +38,13 @@
     }
   }
 
-  textarea, .textarea, input[type="text"], input[type="password"], input[type="email"], input[type="number"], select {
+  textarea,
+  .textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  select {
     border: 2px solid #333;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
@@ -67,7 +73,12 @@
     background: #fff;
   }
 
-  textarea, input[type="text"], input[type="password"], input[type="email"], input[type="number"], select {
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  select {
     box-shadow: none;
     background: #fff;
   }
@@ -93,7 +104,12 @@
     line-height: 40px;
   }
 
-  textarea, .textarea, input[type="text"], input[type="password"], input[type="email"], input[type="number"], select {
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  select {
     background: rgba(255, 255, 255, 0.7);
     border: 2px solid #f1f1f1;
   }
