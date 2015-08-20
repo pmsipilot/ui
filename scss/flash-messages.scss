@@ -31,7 +31,7 @@
 
 .flash-message {
   border: 0;
-  @include border-radius($flashMessagesRadius);
+  @include border-radius($flash-messages-radius);
   @include box-shadow(0 6px 12px rgba(0,0,0,.175));
   cursor: pointer;
   -webkit-transition: all .05s ease-out;
@@ -43,7 +43,7 @@
   margin-bottom: 10px;
   text-align: justify;
 
-  @include flashMessageColored(#e9e9e9, #ccc, $baseTextColor);
+  @include flashMessageColored(#e9e9e9, #ccc, $base-text-color);
 
   i {
     margin-right: 5px;

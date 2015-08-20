@@ -12,7 +12,7 @@
 
   // Buttons
   .btn-default, a.btn-default {
-    @include buttonColored(#e9e9e9, #ccc, $baseTextColor);
+    @include buttonColored(#e9e9e9, #ccc, $base-text-color);
   }
   .btn-one, a.btn-one {
     @include buttonColored($color1, $color1 - #151515, white);

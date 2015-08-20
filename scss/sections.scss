@@ -1,16 +1,16 @@
 .application-header {
   @include desktop-row;
-  font-size: $applicationHeaderFontSize;
+  font-size: $application-header-font-size;
   background-color: #333;
-  padding: $applicationHeaderPadding;
+  padding: $application-header-padding;
   color: #fff;
-  height: $applicationHeaderHeight + 2 * $applicationHeaderPadding;
-  line-height: $applicationHeaderHeight;
+  height: $application-header-height + 2 * $application-header-padding;
+  line-height: $application-header-height;
 
   .application-title {
     font-size: 2em;
     float: left;
-    line-height: $applicationHeaderHeight;
+    line-height: $application-header-height;
     display: block;
     color: #fff;
 
@@ -43,7 +43,7 @@
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     option {
-      color: $baseTextColor;
+      color: $base-text-color;
     }
   }
 }
@@ -51,7 +51,7 @@
 .main {
   @include desktop-row;
   @include scroll-y;
-  top: $applicationHeaderHeight + (2 * $applicationHeaderPadding);
+  top: $application-header-height + (2 * $application-header-padding);
   bottom: 0;
 }
 
@@ -59,7 +59,7 @@
   @include desktop-col;
   @include scroll-y;
   left: 0;
-  width: $sidebarWidth;
+  width: $sidebar-width;
   background: #f1f1f1;
 
   .block {
@@ -78,7 +78,7 @@
   @include scroll-y;
   @include scroll-x;
   right: 0;
-  left: $sidebarWidth + $sidebarResizerWidth;
+  left: $sidebar-width + $sidebar-resizer-width;
 }
 
 .subheader {
@@ -108,15 +108,15 @@
 
 .sidebar-resizer {
   position: absolute;
-  left: $sidebarWidth;
+  left: $sidebar-width;
   top: 0;
   bottom: 0;
-  width: $sidebarResizerWidth;
+  width: $sidebar-resizer-width;
   cursor: pointer;
-  background-color: $sidebarResizerColor;
+  background-color: $sidebar-resizer-color;
 
   &:hover {
-    background-color: $sidebarResizerActiveColor
+    background-color: $sidebar-resizer-active-color
   }
 
   &::before {
@@ -134,11 +134,11 @@
 
   .sidebar-resizer {
     left: 0;
-    width: $sidebarResizerWidth;
+    width: $sidebar-resizer-width;
   }
 
   .content {
-    left: $sidebarResizerWidth;
+    left: $sidebar-resizer-width;
   }
 
   .sidebar-resizer::before {

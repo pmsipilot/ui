@@ -1,8 +1,8 @@
 .form-control {
-  border: 1px solid $formBorderColor;
-  color: $formColor;
-  background: $formBackgroundColor;
-  @include border-radius($formRadius);
+  border: 1px solid $form-border-color;
+  color: $form-color;
+  background: $form-background-color;
+  @include border-radius($form-radius);
   width: 210px;
 }
 
@@ -15,10 +15,10 @@
 }
 
 textarea, .textarea, input[type="text"], input[type="password"], input[type="email"], input[type="number"], select {
-  border: 1px solid $formBorderColor;
-  color: $formColor;
-  background: $formBackgroundColor;
-  @include border-radius($formRadius);
+  border: 1px solid $form-border-color;
+  color: $form-color;
+  background: $form-background-color;
+  @include border-radius($form-radius);
   width: 210px;
   padding: 4px;
   height: $input-default-height;

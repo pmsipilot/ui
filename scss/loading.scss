@@ -5,7 +5,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: $zIndexLoadingBackdrop;
+  z-index: $zindex-loading-backdrop;
   background-color: black;
 }
 
@@ -15,7 +15,7 @@
   left: 50%;
   margin-top: -2em;
   margin-left: -2em;
-  z-index: $zIndexLoadingBackdrop+10;
+  z-index: $zindex-loading-backdrop+10;
 
   .fa-spin {
     font-size: 8em;

@@ -25,9 +25,9 @@
 
 .pagination  ul > li:first-child a {
   margin-left: 0;
-  @include border-radius($buttonsRadius 0 0 $buttonsRadius);
+  @include border-radius($buttons-radius 0 0 $buttons-radius);
 }
 
 .pagination ul > li:last-child a {
-  @include border-radius(0 $buttonsRadius $buttonsRadius 0);
+  @include border-radius(0 $buttons-radius $buttons-radius 0);
 }

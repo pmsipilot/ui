@@ -117,7 +117,7 @@
 
 .ngGrid {
   max-width: 100%;
-  background-color: $tableBackground;
+  background-color: $table-background;
   height: 300px;
   line-height: 26px;
 
@@ -151,10 +151,10 @@
   }
 
   &.bordered {
-    border: 1px solid $tableBorder;
+    border: 1px solid $table-border;
 
     .ngVerticalBarVisible {
-      background: $tableBorder;
+      background: $table-border;
     }
   }
 

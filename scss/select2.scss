@@ -12,7 +12,7 @@
       color: $formColor;
 
       .select2-arrow {
-        background: $select2ArrowBackgroudColor;
+        background: $select2-arrow-backgroud;
         border-left: none;
         @include border-radius(0 $formRadius $formRadius 0);
       }

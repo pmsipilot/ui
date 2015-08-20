@@ -35,17 +35,6 @@ $state-info-border: #d0f2f7 !default;
 $grid-gutter-width:         0 !default;
 
 // =============================================
-// MODALS
-// =============================================
-$zindexModalBackdrop: 1040 !default;
-$zindexModal: 1050 !default;
-
-// =============================================
-// PROGRESS BARS
-// =============================================
-$baseBorderRadius: 3px !default;
-
-// =============================================
 // TOOLTIPS
 // =============================================
 $font-size-mini: ceil($font-size-base * 0.85) !default;
@@ -62,68 +51,67 @@ $zindex-tooltip: 1030 !default;
 // =============================================
 // BASE FONT SIZE AND FAMILY
 // =============================================
-$baseTextColor: #666 !default;
-$baseFontWeight: 400 !default;
-$boldFontWeight: 600 !default;
+$base-text-color: #666 !default;
+$base-font-weight: 400 !default;
+$bold-font-weight: 600 !default;
 $line-height-base: 20px !default;
 
 // =============================================
 // SECTIONS
 // =============================================
-
-$applicationHeaderHeight: 40px !default;
-$applicationHeaderPadding: 15px !default;
-$applicationHeaderFontSize: 1.2em !default;
-$sidebarWidth: 340px !default;
-$sidebarNavItemWidth: 40px !default;
-$sidebarResizerWidth: 6px !default;
-$sidebarResizerColor: #e1e1e1 !default;
-$sidebarResizerActiveColor: #ccc !default;
+$application-header-height: 40px !default;
+$application-header-padding: 15px !default;
+$application-header-font-size: 1.2em !default;
+$sidebar-width: 340px !default;
+$sidebar-nav-item-width: 40px !default;
+$sidebar-resizer-width: 6px !default;
+$sidebar-resizer-color: #e1e1e1 !default;
+$sidebar-resizer-active-color: #ccc !default;
 
 // =============================================
 // BUTTONS
 // =============================================
-$buttonsRadius: 2px !default;
+$buttons-radius: 2px !default;
 
 // =============================================
 // FORMS
 // =============================================
-$formRadius: 2px !default;
-$formLabelWidth: 180px !default;
-$formBackgroundColor: #F7F7F7 !default;
-$formBorderColor: #cbd5dd !default;
-$formColor: #41484A !default;
-$formBoxShadowRgba: rgba(39, 65, 90, 0.075) !default;
+$form-radius: 2px !default;
+$form-label-width: 180px !default;
+$form-background-color: #F7F7F7 !default;
+$form-border-color: #cbd5dd !default;
+$form-color: #41484A !default;
+$form-box-shadow-rgba: rgba(39, 65, 90, 0.075) !default;
 
 // =============================================
 // TABLES
 // =============================================
-$tableBackground: transparent !default; // overall background-color
-$tableBackgroundAccent: #f9f9f9 !default; // for striping
-$tableBackgroundHover: #f5f5f5 !default; // for hover
-$tableBorder: #ddd !default; // table and cell border
+$table-background: transparent !default; // overall background-color
+$table-background-accent: #f9f9f9 !default; // for striping
+$table-background-hover: #f5f5f5 !default; // for hover
+$table-border: #ddd !default; // table and cell border
 
 // =============================================
 // FLASH MESSAGES
 // =============================================
-$flashMessagesRadius: 2px !default;
+$flash-messages-radius: 2px !default;
 
 // =============================================
 // LOADER INDICATOR
 // =============================================
-$zIndexLoadingBackdrop: 2000 !default;
+$zindex-loading-backdrop: 2000 !default;
 
 // =============================================
 // SCROLL BARS
 // =============================================
-$scrollBarWidthHeight: 6px !default;
-$scrollBarBackground: #F5F5F5 !default;
-$scrollBarForeground: #aaa !default;
+$scrollbar-width-height: 6px !default;
+$scrollbar-background: #F5F5F5 !default;
+$scrollbar-foreground: #aaa !default;
 
 // =============================================
 // SELECT2
 // =============================================
-$select2ArrowBackgroudColor: #DDDDDD !default;
+$select2-arrow-backgroud: #DDDDDD !default;
 
 // =============================================
 // Font awesome
