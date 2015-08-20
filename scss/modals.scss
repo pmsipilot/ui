@@ -1,0 +1,50 @@
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.8;
+}
+
+.modal-show {
+  display: block;
+}
+
+@mixin modal-colored($color, $text-color-header) {
+  .modal-header {
+    color: $text-color-header;
+    background-color: $color;
+  }
+
+  .modal-footer .btn-modal {
+    @include buttonColored($color, darken($color, 10), $text-color-header);
+  }
+}
+
+.modal-success{
+  @include modal-colored($btn-success-bg, $btn-success-color);
+}
+
+.modal-warning{
+  @include modal-colored($btn-warning-bg, $btn-warning-color);
+}
+
+.modal-danger{
+  @include modal-colored($btn-danger-bg, $btn-danger-color);
+}
+
+.modal-header {
+  h1, h2, h3 {
+    margin: 0;
+  }
+
+  .close {
+    color: #FFF;
+    opacity: 0.5;
+    &:hover, &:active, &:focus {
+      color: #F7F7F7;
+      opacity: 0.8;
+    }
+  }
+}
+
+.modal-footer {
+  margin: 0;
+}

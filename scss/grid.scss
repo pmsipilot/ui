@@ -1,0 +1,29 @@
+@mixin desktop-row {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+@mixin desktop-col {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+@mixin scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@mixin scroll-y {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.desktop-row {
+  @include desktop-row;
+}
+
+.desktop-col {
+  @include desktop-col;
+}

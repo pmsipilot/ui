@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.0.0
+
+* [BC] passage à twitter bootstrap v4
+* [BC] passage à scss au lieu de less
+
 ## 3.0
 
 * [BC break] no override bootstrap .btn-info, -danger etc. by removing default theme colors on simple .btn

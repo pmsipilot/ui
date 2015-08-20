@@ -1,0 +1,171 @@
+@mixin buttonColored($backgroundColor, $borderColor, $textColor) {
+  border-bottom: 2px solid $borderColor;
+  background-color: $backgroundColor;
+  color: $textColor;
+
+  &:hover, &.active, &:focus {
+    background-color: $backgroundColor + #0a0a0a;
+    text-decoration: none;
+    color: $textColor;
+    @include box-shadow(none);
+  }
+
+  &:active, &:hover:active, &:focus:active, &.active:active {
+    background-color: $backgroundColor;
+    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+
+  &.selected {
+    background-color: $backgroundColor + #303030;
+    border-bottom-color: $borderColor + #303030;
+  }
+}
+
+@mixin buttonSize($size) {
+  &.rounded {
+    @include border-radius(($size + 10px) / 2);
+    width: $size + 10px;
+    height: $size + 10px;
+    padding: 0;
+    border: 0;
+  }
+  &.square {
+    width: $size + 10px;
+    height: $size + 10px;
+    padding: 0;
+  }
+  padding: 0 $size;
+  height: $size + 10px;
+  line-height: $size + 9px;
+  text-align: center;
+}
+
+@mixin btn-normal {
+  @include buttonSize($line-height-base);
+}
+
+@mixin btn-medium {
+  @include buttonSize($line-height-base * 1.5);
+}
+
+@mixin btn-large {
+  @include buttonSize($line-height-base * 2);
+}
+
+@mixin btn-small {
+  @include buttonSize($line-height-base * 0.7);
+}
+
+@mixin button {
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  border: 0;
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $line-height, $btn-border-radius);
+  @include transition(all .2s ease-in-out);
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus();
+    }
+  }
+
+  @include hover-focus {
+    text-decoration: none;
+  }
+  &.focus {
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    background-image: none;
+    outline: 0;
+    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+
+  &.disabled,
+  &:disabled,
+  fieldset[disabled] & {
+    cursor: default;
+    background-image: none;
+    opacity: 0.65;
+    @include box-shadow(none);
+  }
+}
+
+@mixin btn-icon {
+  .icon {
+    margin-right: 10px;
+  }
+
+  .icon-separated {
+    display: inline-block;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #FFF;
+  }
+}
+
+@mixin btn-empty {
+  padding: 0;
+  margin: 0;
+
+  .btn-content {
+    padding: 0 $line-height-base;
+  }
+}
+
+.btn, a.btn {
+  @include button;
+  @include btn-normal;
+}
+
+.btn-normal, a.btn-normal {
+  @include btn-normal;
+}
+
+.btn-medium, a.btn-medium {
+  @include btn-medium;
+}
+
+.btn-large, a.btn-large {
+  @include btn-large;
+}
+
+.btn-small, a.btn-small {
+  @include btn-small;
+}
+
+.btn-icon, a.btn-icon {
+  @include btn-icon;
+}
+
+.btn.btn-empty {
+  @include btn-empty;
+}
+
+.btn-success {
+  @include buttonColored($btn-success-bg, darken($btn-success-bg, 10), #FFF);
+}
+
+.btn-danger {
+  @include buttonColored($btn-danger-bg, darken($btn-danger-bg, 10), #FFF);
+}
+
+.btn-warning {
+  @include buttonColored($btn-warning-bg, darken($btn-warning-bg, 10), #FFF);
+}
+
+.btn-info {
+  @include buttonColored($btn-info-bg, darken($btn-info-bg, 10), #FFF);
+}

@@ -1,0 +1,132 @@
+// =============================================
+// Twitter Bootstrap variables
+// =============================================
+$font-size-base: 0.8rem !default;
+$font-family-sans-serif: 'Source Sans Pro', sans-serif !default;
+
+$line-height-computed: 20px !default;
+$input-default-height: 30px !default;
+
+$headings-font-weight: 300 !default;
+
+$border-radius:        2px !default;
+$border-radius-lg:       2px !default;
+$border-radius-sm:       2px !default;
+
+// =============================================
+// Twitter boostrap Colors
+// =============================================
+$state-warning-text: #af7f18 !default;
+$state-warning-bg: floralwhite !default;
+$state-warning-border: #fcf8e3 !default;
+
+$state-danger-text: #b13d31 !default;
+$state-danger-bg: #fdefee !default;
+$state-danger-border: #fad7db !default;
+
+$state-success-text: #229173 !default;
+$state-success-bg: #f2fcf9 !default;
+$state-success-border: #ddf7eb !default;
+
+$state-info-text: #26929c !default;
+$state-info-bg: #eef8fc !default;
+$state-info-border: #d0f2f7 !default;
+
+$grid-gutter-width:         0 !default;
+
+// =============================================
+// MODALS
+// =============================================
+$zindexModalBackdrop: 1040 !default;
+$zindexModal: 1050 !default;
+
+// =============================================
+// PROGRESS BARS
+// =============================================
+$baseBorderRadius: 3px !default;
+
+// =============================================
+// TOOLTIPS
+// =============================================
+$font-size-mini: ceil($font-size-base * 0.85) !default;
+// ~11px
+
+$tooltip-color: #fff !default;
+$tooltip-bg: rgba(0, 0, 0, .9) !default;
+$tooltip-arrow-width: 5px !default;
+$tooltip-arrow-color: $tooltip-bg !default;
+
+$zindex-tooltip: 1030 !default;
+
+
+// =============================================
+// BASE FONT SIZE AND FAMILY
+// =============================================
+$baseTextColor: #666 !default;
+$baseFontWeight: 400 !default;
+$boldFontWeight: 600 !default;
+$line-height-base: 20px !default;
+
+// =============================================
+// SECTIONS
+// =============================================
+
+$applicationHeaderHeight: 40px !default;
+$applicationHeaderPadding: 15px !default;
+$applicationHeaderFontSize: 1.2em !default;
+$sidebarWidth: 340px !default;
+$sidebarNavItemWidth: 40px !default;
+$sidebarResizerWidth: 6px !default;
+$sidebarResizerColor: #e1e1e1 !default;
+$sidebarResizerActiveColor: #ccc !default;
+
+// =============================================
+// BUTTONS
+// =============================================
+$buttonsRadius: 2px !default;
+
+// =============================================
+// FORMS
+// =============================================
+$formRadius: 2px !default;
+$formLabelWidth: 180px !default;
+$formBackgroundColor: #F7F7F7 !default;
+$formBorderColor: #cbd5dd !default;
+$formColor: #41484A !default;
+$formBoxShadowRgba: rgba(39, 65, 90, 0.075) !default;
+
+// =============================================
+// TABLES
+// =============================================
+$tableBackground: transparent !default; // overall background-color
+$tableBackgroundAccent: #f9f9f9 !default; // for striping
+$tableBackgroundHover: #f5f5f5 !default; // for hover
+$tableBorder: #ddd !default; // table and cell border
+
+// =============================================
+// FLASH MESSAGES
+// =============================================
+$flashMessagesRadius: 2px !default;
+
+// =============================================
+// LOADER INDICATOR
+// =============================================
+$zIndexLoadingBackdrop: 2000 !default;
+
+// =============================================
+// SCROLL BARS
+// =============================================
+$scrollBarWidthHeight: 6px !default;
+$scrollBarBackground: #F5F5F5 !default;
+$scrollBarForeground: #aaa !default;
+
+// =============================================
+// SELECT2
+// =============================================
+$select2ArrowBackgroudColor: #DDDDDD !default;
+
+// =============================================
+// Font awesome
+// =============================================
+$fa-font-path:        "../font" !default;
+$icon-font-path:      "../font/" !default;
