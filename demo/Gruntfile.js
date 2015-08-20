@@ -12,14 +12,14 @@ module.exports = function(grunt) {
             all: ['app/**/*.js']
         },
 
-        // Less build
-        less: {
-            all: {
-                options: {
-                    yuicompress: true
-                },
+        // Sass build
+        sass: {
+            options: {
+                sourceMap: true
+            },
+            dist: {
                 files: {
-                    "public/css/pmsipilot-ui.css": "less/main.less"
+                    'public/css/pmsipilot-ui.css': 'scss/main.scss'
                 }
             }
         },
@@ -29,9 +29,9 @@ module.exports = function(grunt) {
             main: {
                 files: [
                     {expand: true, src: ['partials/**'], dest: 'public/'},
-                    {expand: true, cwd: 'bower_components/pmsipilot-ui/images/', src: ['**/*'], dest: 'public/images'},
-                    {expand: true, src: ['bower_components/fontawesome/fonts/*'], dest: 'public/font/', flatten: true},
-                    {expand: true, src: ['bower_components/pmsipilot-ui/font/*'], dest: 'public/font/', flatten: true},
+                    {expand: true, cwd: 'node_modules/pmsipilot-ui/images/', src: ['**/*'], dest: 'public/images'},
+                    {expand: true, src: ['node_modules/pmsipilot-ui/node_modules/font-awesome/fonts/*'], dest: 'public/font/', flatten: true},
+                    {expand: true, src: ['node_modules/pmsipilot-ui/font/*'], dest: 'public/font/', flatten: true},
                     {src: ['index.build.html'], dest: 'public/index.html'}
                 ]
             }
@@ -45,20 +45,19 @@ module.exports = function(grunt) {
                 dest: 'public/js/app.js'
             },
 
-          vendors: {
+            vendors: {
                 src: [
-                    'bower_components/jquery/dist/jquery.js'
-                    ,'bower_components/angular/angular.js'
-                    ,'bower_components/angular-bootstrap/ui-bootstrap-tpls.js'
-                    ,'bower_components/angular-route/angular-route.js'
-                    ,"bower_components/google-code-prettify/src/prettify.js"
+                    'node_modules/angular/angular.js'
+                    ,'node_modules/angular-bootstrap/ui-bootstrap-tpls.js'
+                    ,'node_modules/angular-route/angular-route.js'
+                    ,"node_modules/google-code-prettify/src/prettify.js"
                 ],
                 dest: 'public/js/vendor.js'
             },
 
             vendors_stylesheets: {
                 src: [
-                    "bower_components/google-code-prettify/src/prettify.css"
+                    "node_modules/google-code-prettify/src/prettify.css"
                 ],
                 dest: 'public/css/vendor.css'
             }
@@ -78,11 +77,11 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-connect');
 
-    grunt.registerTask('default', ['jshint', 'less', 'copy', 'concat']);
+    grunt.registerTask('default', ['jshint', 'sass', 'copy', 'concat']);
 
     grunt.registerTask('server', function () {
         return grunt.task.run(['default', 'connect']);

@@ -4,22 +4,24 @@
 
 <h3 class="space-top">Using the library in your project</h3>
 
-Install with bower
+<p>Install with npm</p>
+<pre>npm install pmsipilot-ui --save</pre>
 
-<pre>bower install pmsipilot-ui --save</pre>
-
-In your main.less, import the library less file
-
+<p>In your main.scss, import the library sass file</p>
 <pre>
-@import 'bower_components/fontawesome/less/font-awesome';
-@import 'bower_components/bootstrap/less/bootstrap';
-@import 'bower_components/pmsipilot-ui/less/bootstrap';
+@import 'node_modules/pmsipilot-ui/scss/bootstrap';
 </pre>
 
-Customize your UI Theme
-
+<p>Customize your UI Theme</p>
 <pre>
 body {
-.theme-colored(@themeColorOne, @themeColorTwo, @themeColorThree);
+    @include theme-colored(@themeColorOne, @themeColorTwo, @themeColorThree);
 }
 </pre>
+
+<p><strong>Build</strong></p>
+<ul>
+    <li>The output css should be in the css public folder</li>
+    <li>Copy images from the library to the images public folder</li>
+    <li>Copy fonts from the library, bootstrap and from font-awesome the publid font folder</li>
+</ul>

@@ -1,14 +1,9 @@
 // Thème par défaut
 body {
-.theme-colored(@themeColorOne, @themeColorTwo, @themeColorThree);
+  @include theme-colored(@themeColorOne, @themeColorTwo, @themeColorThree);
 }
 
 // Définir des classes globales pour switcher de thème au besoin
 .theme2 {
-.theme-colored(@theme2ColorOne, @theme2ColorTwo, @theme2ColorThree);
+  @include theme-colored(@theme2ColorOne, @theme2ColorTwo, @theme2ColorThree);
 }
-
-// Définir des scrollbar personnalisées
-.custom-scrollbar;
-OU
-.custom-scrollbar(@scrollBarWidthHeight,@scrollBarBackground, @scrollBarForeground);
