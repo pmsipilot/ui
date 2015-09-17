@@ -80,4 +80,19 @@
 
     // Select2
     .select2(@color1, @color2, @formColor, @formBorderColor, @formBackgroundColor);
+
+    // Tabs
+    .tabbable .nav > li {
+        & > a {
+            color: @color1;
+
+            &:active, &:hover, &:focus {
+                color: @color1;
+            }
+        }
+
+        &.disabled > a {
+            color: @navbar-default-link-disabled-color;
+        }
+    }
 }
