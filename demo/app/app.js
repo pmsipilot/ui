@@ -41,6 +41,12 @@ angular.module('pmsipilot-ui-demo').config(['$routeProvider', function($routePro
             controller: 'PopupsController'
         })
 
+        .when('/pagination', {
+            url: '/pagination',
+            templateUrl: 'partials/pagination.html',
+            controller: 'PaginationCtrl'
+        })
+
         .otherwise('/')
     ;
 
