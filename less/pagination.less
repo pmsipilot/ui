@@ -36,3 +36,44 @@
 .pagination ul > li:last-child a {
     .border-radius(0 @buttonsRadius @buttonsRadius 0);
 }
+
+.pagination-colored(@color, @textColor) {
+
+    & {
+        > li {
+            > a,
+            > span {
+                color: @color;
+            }
+        }
+
+        > li > a,
+        > li > span {
+            &:hover,
+            &:focus {
+                color: @color - #303030;
+            }
+        }
+
+        > .active > a,
+        > .active > span {
+            &,
+            &:hover,
+            &:focus {
+                background-color: @color;
+                border-color: @color;
+            }
+        }
+
+        > .disabled {
+            > span,
+            > span:hover,
+            > span:focus,
+            > a,
+            > a:hover,
+            > a:focus {
+                color: @textColor;
+            }
+        }
+    }
+}
