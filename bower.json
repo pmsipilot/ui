@@ -14,7 +14,7 @@
     "demo"
   ],
   "dependencies": {
-    "fontawesome": "~4.2.0",
+    "fontawesome": "~4.4.0",
     "bootstrap": "~3.2.0"
   }
 }

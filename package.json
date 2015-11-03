@@ -7,7 +7,7 @@
 	  "url": "https://github.com/pmsipilot/ui"
   },
   "dependencies": {
-    "font-awesome": "~4.2.0",
+    "font-awesome": "~4.4.0",
     "bootstrap": "~3.2.0"
   }
 }
