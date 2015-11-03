@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.3.0
+
+* Bump font-awesome version from 4.2.0 to 4.4.0 ([@Krevo](https://github.com/Krevo))
+
 ## 3.0
 
 * [BC break] no override bootstrap .btn-info, -danger etc. by removing default theme colors on simple .btn
