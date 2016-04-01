@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.4.0
+
+* Remove custom colors for states (danger, success, info, warning)
+
 ## 3.3.0
 
 * Bump font-awesome version from 4.2.0 to 4.4.0 ([@Krevo](https://github.com/Krevo))
