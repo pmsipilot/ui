@@ -1,0 +1,58 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1280 1280" style="enable-background:new 0 0 1280 1280;" xml:space="preserve">
+<style type="text/css">
+    .logo > circle {
+        fill: none;
+        stroke: #C6C6C6;
+        stroke-width: 73;
+        stroke-miterlimit: 10;
+    }
+
+    .content > circle {
+        fill: none;
+        stroke: #6B6B6B;
+        stroke-width: 4;
+        stroke-miterlimit: 10;
+    }
+
+    .green path {
+        fill: #83C558;
+        stroke: #83C558;
+        stroke-width: 50;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+    }
+
+    .blue path {
+        fill: #76C6E3;
+        stroke: #76C6E3;
+        stroke-width: 50;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+    }
+</style>
+
+<g class="logo">
+    <g class="content">
+        <g class="green">
+            <g>
+                <path d="M476.9,151.6c-108.5,36.3-201.9,105.5-265,198.6l265,264.9V151.6z"/>
+                <path d="M123.3,639.6c0,32.6,3.8,64.1,9.6,95.2h367.2L178,412.6C144,481.4,123.3,557.8,123.3,639.6z"/>
+                <path d="M152.2,802.9c36.3,108.7,105.6,202.2,198.8,265.1l265.1-265.1H152.2z"/>
+                <path d="M413.4,1102c68.8,33.8,145,54.5,226.8,54.5c32.6,0,64.2-3.8,95.1-9.6V780.2L413.4,1102z"/>
+            </g>
+        </g>
+        <g class="blue">
+            <g>
+                <path d="M803.1,1128.4c108.5-36.3,201.9-105.5,265-198.6l-265-264.9V1128.4z"/>
+                <path d="M1156.7,640.4c0-32.6-3.8-64.1-9.6-95.2H779.8L1102,867.4C1136,798.6,1156.7,722.2,1156.7,640.4z"/>
+                <path d="M1127.8,477.1c-36.3-108.7-105.6-202.2-198.8-265.1L663.9,477.1H1127.8z"/>
+                <path d="M866.6,178c-68.8-33.8-145-54.5-226.8-54.5c-32.6,0-64.2,3.8-95.1,9.6v366.8L866.6,178z"/>
+            </g>
+        </g>
+
+        <circle cx="640" cy="640" r="504.8"/>
+    </g>
+
+    <circle cx="640" cy="640" r="542.6"/>
+</g>
+</svg>
