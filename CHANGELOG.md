@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.0
+
+* Added the new SVG logo
+
 ## 3.4.0
 
 * Remove custom colors for states (danger, success, info, warning)
