@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.0.1
+
+* Fix logo background
+
+
 ## 4.0.0
 
 * Added the new SVG logo
