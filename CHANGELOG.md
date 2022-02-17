@@ -1,5 +1,12 @@
 # Changelog
 
+## 4.1.0
+
+* Nouveau logo PSIH
+* Ajout du logo Hospivision
+* Ajout du logo Hospiperf
+* Ajout du logo IDS
+
 ## 4.0.1
 
 * Fix logo background
